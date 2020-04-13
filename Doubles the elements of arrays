@@ -1,0 +1,66 @@
+classAr{
+privateint a[];
+privateint b[];
+int c[];
+Ar(inti,int j){
+a=new int[i];
+b=new int[j];
+c=new int[i+j];
+}
+void input(){
+inti,j;
+for(i=0;i<a.length;i++)
+{
+a[i]=i;
+}
+for (j=0;j<b.length;j++ ) 
+{
+b[j]=j;
+}
+}
+void assign()
+{
+inti,j,k;
+for(i=0;i<a.length;i++)
+{
+a[i]=2*a[i];
+c[i]=a[i];
+}
+k=i;
+for(j=0;j<b.length;j++)
+{
+b[j]=2*b[j];
+c[k]=b[j];	
+k++;
+}
+}
+voiddisp()
+{
+inti,j,k;
+for(i=0;i<a.length;i++)
+{
+System.out.print(a[i]);
+}
+System.out.println();
+for(j=0;j<b.length;j++)
+{
+System.out.print(b[j]);
+}
+System.out.println();
+for(k=0;k<a.length+b.length;k++)
+{
+System.out.print(c[k]);}
+System.out.println();
+}
+}
+classobj
+{
+public static void main(String[] args) 
+{
+Ar a=new Ar(3,4);
+a.input();
+a.disp();		
+a.assign();
+a.disp();
+}
+}
