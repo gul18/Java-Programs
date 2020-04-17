@@ -1,0 +1,31 @@
+classNewThread extends Thread{
+String name;
+NewThread(String threadname){
+name=threadname;
+System.out.println("New Thread:"+name);
+start();
+}
+public void run(){
+try{
+Thread.sleep(500);
+}
+catch(InterruptedException e){
+System.out.println(name+"Interrupted");
+}
+System.out.println(name+" exiting.");
+}
+}
+classExtendThread{
+public static void main(String args[]){
+newNewThread("Khushi");
+newNewThread("Maheshwari");
+try{
+Thread.sleep(5000);
+}
+catch(InterruptedException e){
+System.out.println("Main Thread Interrupted");
+}
+System.out.println("II yrB.Tech. student");
+System.out.println("Main thread exiting");
+}
+}
