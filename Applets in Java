@@ -1,0 +1,11 @@
+import java.awt.*;
+import java.applet.*;
+public class RunSimpleApplet extends Applet{
+public void paint(Graphics g)
+{
+  g.drawString("Ishanki ",20,20);
+}
+}
+
+<applet code="RunSimpleApplet" width=200 height=60>
+</applet>
